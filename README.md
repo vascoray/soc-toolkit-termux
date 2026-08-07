@@ -11,3 +11,6 @@ Mobile Security Operations Center built 100% in Termux. No root.
 Bash | nmap | git | Termux on Android
 
 Built by: King Vasco
+
+### Demo
+![POCKET MINI SOC Running in Termux](https://github.com/vascoray/soc-toolkit-termux/raw/main/57f9ce8d-1647-4aad-a420-0c78937f6ff6.jpeg)
