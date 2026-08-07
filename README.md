@@ -1,32 +1,13 @@
-# soc-toolkit-termux
+# POCKET MINI SOC v1.3 👑
+Mobile Security Operations Center built 100% in Termux. No root.
 
-A collection of 5 Bash scripts for SOC Analysts running in Termux/Android. 
-Built for log monitoring, alerting, and basic threat detection on mobile.
+### Features
+1. `menu.sh` - Interactive SOC Dashboard
+2. `logwatcher.sh` - Real-time threat detection + auto Jira ticket creation
+3. `portscanner.sh` - nmap network reconnaissance
+4. `report.csv` - Export alerts for incident reports
 
-## 🛠️ Tools Included
+### Tech Stack
+Bash | nmap | git | Termux on Android
 
-| Script | Purpose |
-| --- | --- |
-| `logwatcher.sh` | Monitors system logs in real-time |
-| `alertsystem.sh` | Sends alerts for suspicious activity |
-| `portscanner.sh` | Quick port scan for local network |
-| `hashchecker.sh` | Verify file integrity with MD5/SHA256 |
-| `sysreport.sh` | Generate system status report |
-
-## 🚀 Usage in Termux
-
-### Demo
-![System Report Running in Termux](38bca826-3210-4e9c-9f5e-ad3da3b1c782.jpeg)
-
-```bash
-pkg update && pkg install git bash
-git clone https://github.com/vascoray/soc-toolkit-termux
-cd soc-toolkit-termux
-chmod +x *.sh
-./logwatcher.sh
-```bash
-pkg update && pkg install git bash
-git clone https://github.com/vascoray/soc-toolkit-termux
-cd soc-toolkit-termux
-chmod +x *.sh
-./logwatcher.sh
+Built by: King Vasco
