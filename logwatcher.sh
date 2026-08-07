@@ -1,15 +1,23 @@
 #!/bin/bash
-echo "[+] Starting POCKET MINI SOC v1.2 - AUTO TICKETING"
-echo "Watching for suspicious activity... Ctrl+C to stop"
+# Log Watcher - Monitors logs in real-time
+echo "[+] Starting Log Watcher..."
+echo "Press Ctrl+C to stop"
+tail -f /data/data/com.termux/files/usr/var/log/syslog 2>/dev/null || tail -f $PREFIX/var/log/messages
+#!/bin/bash
+LOGFILE="report.csv"
+echo "Timestamp,Event,Severity" > $LOGFILE
 
-while true; do
-    if [ -f fake_attacks.log ]; then
-        if grep -qi "failed\|attack\|brute" fake_attacks.log; then
-            echo "[ALERT] Threat detected! Creating ticket..."
-            ~/soc-toolkit-termux/create_jira.sh
-            > fake_attacks.log  # clear it so it doesn't spam
-        fi
+echo "[+] Starting Log Watcher..."
+echo "Press Ctrl+C to stop"
+echo ""
+
+tail -f /data/data/com.termux/files/usr/var/log/syslog 2>/dev/null | while read line
+do
+    if echo "$line" | grep -qi "fail\|error\|denied\|attack"; then
+        timestamp=$(date)
+        echo "[$timestamp] ALERT: $line"
+        echo "$timestamp,Potential Threat,High" >> $LOGFILE
+    else
+        echo "$line"
     fi
-    echo "[+] No critical alerts found - $(date)"
-    sleep 5
 done
