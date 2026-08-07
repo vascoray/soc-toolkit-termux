@@ -14,7 +14,7 @@ Built for log monitoring, alerting, and basic threat detection on mobile.
 | `sysreport.sh` | Generate system status report |
 
 ## 🚀 Usage in ### Demo
-![System Report Running in Termux](demo.jpg)
+![System Report Running in Termux]
 ```bash
 pkg update && pkg install git bash
 git clone https://github.com/vascoray/soc-toolkit-termux
