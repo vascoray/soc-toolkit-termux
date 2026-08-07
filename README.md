@@ -1,16 +1,16 @@
-# POCKET MINI SOC v1.3 👑
-Mobile Security Operations Center built 100% in Termux. No root.
+# Pocket Mini SOC v1.5
+Termux SOC Toolkit built by King Vasco 🇬🇭
 
-### Features
-1. `menu.sh` - Interactive SOC Dashboard
-2. `logwatcher.sh` - Real-time threat detection + auto Jira ticket creation
-3. `portscanner.sh` - nmap network reconnaissance
-4. `report.csv` - Export alerts for incident reports
+## Features
+- [1] Network Recon - Port Scanner with CSV export
+- [2] Threat Detection - Logwatcher for nmap, nc, rm -rf
+- [3] Reporting - Full CSV report
+- [0] Clean Exit
 
-### Tech Stack
-Bash | nmap | git | Termux on Android
-
-Built by: King Vasco
-
-### Demo
-![POCKET MINI SOC Running in Termux](https://github.com/vascoray/soc-toolkit-termux/raw/main/57f9ce8d-1647-4aad-a420-0c78937f6ff6.jpeg)
+## Install
+```bash
+pkg install nmap -y
+git clone https://github.com/vascoray/soc-toolkit-termux
+cd soc-toolkit-termux
+chmod +x pocketsoc.sh
+./pocketsoc.sh
