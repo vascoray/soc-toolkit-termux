@@ -15,6 +15,7 @@ Built for log monitoring, alerting, and basic threat detection on mobile.
 
 ## 🚀 Usage in ### Demo
 ![System Report Running in Termux]
+(38bca826-3210-4e9c-9f5e-ad3da3b1c782.jpeg)
 ```bash
 pkg update && pkg install git bash
 git clone https://github.com/vascoray/soc-toolkit-termux
