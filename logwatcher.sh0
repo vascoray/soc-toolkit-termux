@@ -1,0 +1,11 @@
+#!/bin/bash
+echo "[+] Starting POCKET MINI SOC v1.0"
+echo "Watching for suspicious activity... Ctrl+C to stop"
+
+while true; do
+    if [ -f fake_attacks.log ]; then
+        grep -i "failed\|attack\|brute" fake_attacks.log && echo "[ALERT] Threat detected! Check alerts.log" >> alerts.log
+    fi
+    echo "[+] No critical alerts found - $(date)"
+    sleep 3
+done
