@@ -12,6 +12,8 @@ This toolkit proves you can do real SOC work from a phone.
 - **[3] Reporting** - Generate full CSV security reports 
 - **[4] Live Dashboard** - Real-time threat alerts at `http://localhost:8080`
   
+  ![Dashboard Demo](dashboard.jpg)
+  
 - **[0] Clean Exit**
 
 ### Quick Start
