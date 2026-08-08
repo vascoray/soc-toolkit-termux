@@ -5,6 +5,7 @@ Termux SOC Toolkit built by King Vasco 🇬🇭
 - [1] Network Recon - Port Scanner with CSV export
 - [2] Threat Detection - Logwatcher for nmap, nc, rm -rf
 - [3] Reporting - Full CSV report
+- [4] Dashboard to local host live signals
 - [0] Clean Exit
 
 ## Install
