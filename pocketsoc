@@ -1,27 +1,83 @@
-#!/bin/bash
-clear
-echo "====================================="
-echo "  POCKET SOC MOBILE v1.4 👑"
-echo "  Built by King Vasco"
-echo "====================================="
-echo "1. Run Logwatcher - Threat Detection"
-echo "2. Run Portscanner - Network Recon"
-echo "3. View Report.csv"
-echo "8. Launch Web Dashboard"
-echo "4. Exit"
-echo "====================================="
-read -p "Choose an option: " choice
+#!/usr/bin/env python3
+import os,time,csv,subprocess,re,shutil
+from datetime import datetime
+def clear(): os.system('clear')
 
-if [ $choice -eq 1 ]; then
-    python3 logwatcher.py
-elif [ $choice -eq 2 ]; then
-    python3 portscanner.py
-elif [ $choice -eq 3 ]; then
-    cat report.csv
-elif [ $choice -eq 8 ]; then
-    echo "[+] Launching Web Dashboard on port 8080..."
-    echo "Open http://localhost:8080 in Chrome"
-    cd dashboard && python3 -m http.server 8080
-elif [ $choice -eq 4 ]; then
-    exit
-fi
+def logwatcher():
+ clear();print("[SEC] LOGWATCHER MODULE v1.6.1")
+ threats=[]
+ 
+ log_files = ["auth.log", "syslog", "logcat.txt"]
+ logs = []
+ for f in log_files:
+     if os.path.exists(f):
+         logs = open(f).readlines()[-50:]
+         print(f"[*] Reading {f}")
+         break
+ 
+ if not logs:
+     print("[*] No real logs found. Using demo data...")
+     logs=["2026-08-08 01:00:01 FAILED LOGIN user:admin","2026-08-08 01:00:05 PORT SCAN from 192.168.1.55"]
+ 
+ for log in logs:
+     log=str(log)
+     if "FAILED" in log or "FAIL" in log or "PORT SCAN" in log or "DROPPED" in log:
+         threats.append(log.strip());print("[!] THREAT:",log.strip())
+ 
+ with open("report.csv","w",newline="") as f:
+  writer=csv.writer(f);writer.writerow(["Timestamp","Threat"])
+  for t in threats: 
+      parts = t.split(" ",3)
+      if len(parts) >= 3: writer.writerow([parts[0]+" "+parts[1], parts[2]+" "+parts[3]])
+ 
+ # AUTO-COPY TO DASHBOARD FOLDER
+ if os.path.exists("dashboard"):
+     shutil.copy("report.csv", "dashboard/report.csv")
+     print("[+] report.csv copied to dashboard/")
+ 
+ print(f"\n[+] {len(threats)} threats saved")
+ input("\nPress Enter...")
+
+def portscanner():
+ clear();print("\n[NET] NETWORK RECON v1.6.1")
+ target=input("Enter target IP: ")
+ # ROUTER-FRIENDLY FAST SCAN
+ command = f"nmap -Pn --top-ports 20 -sC -T4 --host-timeout 15s {target}"
+ try:
+  print(f"[*] Running: {command}")
+  result=subprocess.check_output(command, shell=True, text=True, stderr=subprocess.STDOUT)
+  print(result)
+  with open("scan_results.txt","w") as f: f.write(f"Scan of {target} - {datetime.now()}\n\n"+result)
+  print("[+] Saved to scan_results.txt")
+ except subprocess.CalledProcessError as e:
+  print(e.output)
+  print("[+] Saved to scan_results.txt")
+ except KeyboardInterrupt: print("\n[!] Scan cancelled")
+ input("\nPress Enter...")
+
+def view_report():
+ clear();print("[SEC] THREAT REPORT")
+ try: print(open("report.csv").read())
+ except: print("Run Option 1 first.")
+ input("\nPress Enter...")
+
+def dashboard():
+ clear()
+ if not os.path.exists("dashboard"):
+     os.makedirs("dashboard")
+ print("[OPS] DASHBOARD at http://localhost:8080")
+ print("[*] Press CTRL+C to stop server")
+ os.system("cd dashboard && python -m http.server 8080")
+
+def menu():
+ while True:
+  clear();print("="*35+"\n POCKET SOC MOBILE v1.6.1 👑\n King Vasco\n"+"="*35)
+  print("1. Logwatcher\n2. Portscanner\n3. View Report\n8. Dashboard\n4. Exit\n"+"="*35)
+  c=input("Select: ")
+  if c=="1":logwatcher()
+  elif c=="2":portscanner()
+  elif c=="3":view_report()
+  elif c=="8":dashboard()
+  elif c=="4":print("Bye 👑");break
+  else:print("Invalid");time.sleep(1)
+if __name__=="__main__":menu()

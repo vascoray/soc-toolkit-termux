@@ -1,11 +1,35 @@
-<!DOCTYPE html><html><head><title>POCKET SOC</title><meta name="viewport" content="width=device-width,initial-scale=1"><meta http-equiv="refresh" content="3"><style>body{background:#0a0a0a;color:#00ff41;font-family:monospace;padding:20px}h1{border-bottom:2px solid #00ff41}.card{background:#111;border:1px solid #00ff41;padding:15px;margin:10px 0}.critical{color:#ff0041}.high{color:#ff8800}.open{color:#00ff41}.closed{color:#666}</style></head><body><h1>POCKET SOC MOBILE v1.4 - King Vasco</h1><div class="card"><h2>THREAT ALERTS</h2>
-<p class="high">[HIGH] PORT_SCAN:45.33.32.156:22 - 2026-08-07 21:06:34</p>
-<p class="high">[HIGH] PORT_SCAN:45.33.32.156:80 - 2026-08-07 21:06:35</p>
-<p class="high">[HIGH] PORT_SCAN:8.8.8.8:443 - 2026-08-07 23:05:34</p>
-<p class="high">[HIGH] PORT_SCAN:1.1.1.1:80 - 2026-08-07 23:49:25</p>
-<p class="high">[HIGH] PORT_SCAN:1.1.1.1:443 - 2026-08-07 23:49:25</p>
-<p class="high">[HIGH] PORT_SCAN:1.1.1.1:8080 - 2026-08-07 23:49:26</p>
-<p class="high">[HIGH] PORT_SCAN:scanme.nmap.org:22 - 2026-08-08 00:46:02</p>
-<p class="high">[HIGH] PORT_SCAN:scanme.nmap.org:80 - 2026-08-08 00:46:03</p>
-<p>No data yet. Run 1 or 2</p>
-</div><div class="card"><h2>STATUS</h2><p class="open">ONLINE</p></div></body></html>
+<!DOCTYPE html>
+<html>
+<head>
+<title>POCKET SOC MOBILE v1.6.1 - King Vasco</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body{background:#000;color:#0f0;font-family:monospace;padding:15px;margin:0}
+h1{color:#0f0;border-bottom:2px solid #0f0;font-size:18px}
+h2{color:#0f0;font-size:16px}
+.alert{color:#ffa500;margin:3px 0;font-size:14px}
+.ok{color:#00ff00}
+</style>
+</head>
+<body>
+<h1>POCKET SOC MOBILE v1.6.1 - King Vasco</h1>
+<h2>THREAT ALERTS - LIVE</h2>
+<div id="threats"><div class="ok">Loading...</div></div>
+<script>
+function loadThreats(){
+ fetch('report.csv').then(r=>{
+   if(!r.ok) throw new Error('No report yet. Run Option 1 first');
+   return r.text()
+ }).then(data=>{
+   let lines = data.split('\n').slice(1).filter(l=>l.trim()!="")
+   let rows = lines.map(r=>`<div class="alert">[HIGH] ${r}</div>`).join('')
+   document.getElementById('threats').innerHTML = rows || '<div class="ok">No threats detected</div>'
+ }).catch(e=>{
+   document.getElementById('threats').innerHTML = `<div class="alert">Error: ${e.message}</div>`
+ })
+}
+loadThreats();
+setInterval(loadThreats,3000); // refresh every 3s
+</script>
+</body>
+</html>
