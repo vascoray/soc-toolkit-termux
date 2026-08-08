@@ -1,14 +1,20 @@
-# Pocket Mini SOC v1.5
-Termux SOC Toolkit built by King Vasco 🇬🇭
+# Pocket Mini SOC v1.5 🇬🇭
+**The first mobile SOC lab built on Android with Termux** 
+Built by King Vasco
 
-## Features
-- [1] Network Recon - Port Scanner with CSV export
-- [2] Threat Detection - Logwatcher for nmap, nc, rm -rf
-- [3] Reporting - Full CSV report
-- [4] Dashboard to local host live signals
-- [0] Clean Exit
+### Why
+After my national service at Ghana Standards Authority, I built instead of waited. 
+This toolkit proves you can do real SOC work from a phone.
 
-## Install
+### Features
+- **[1] Network Recon** - Port scanning with Nmap + CSV export
+- **[2] Threat Detection** - Logwatcher for nmap, nc, suspicious commands
+- **[3] Reporting** - Generate full CSV security reports 
+- **[4] Live Dashboard** - Real-time threat alerts at `http://localhost:8080`
+  
+- **[0] Clean Exit**
+
+### Quick Start
 ```bash
 pkg install nmap -y
 git clone https://github.com/vascoray/soc-toolkit-termux
