@@ -1,28 +1,29 @@
-#!/data/data/com.termux/files/usr/bin/bash
+#!/bin/bash
 clear
-echo "=================================="
-echo "   POCKET SOC MOBILE v1.4 👑"
-echo "   Built by King Vasco"
-echo "=================================="
+echo "====================================="
+echo "  POCKET SOC MOBILE v1.4 👑"
+echo "  Built by King Vasco"
+echo "====================================="
 echo "1. Run Logwatcher - Threat Detection"
 echo "2. Run Portscanner - Network Recon"
 echo "3. View Report.csv"
-echo "4. Exit"
 echo "8. Launch Web Dashboard"
-echo "=================================="
+echo "4. Exit"
+echo "====================================="
 read -p "Choose an option: " choice
 
-if [ "$choice" == "8" ]; then
-  echo "[+] Starting Web Dashboard on http://localhost:8080"
-  python3 -m http.server 8080
-elif [ "$choice" == "1" ]; then
-  echo "[!] CRITICAL: Failed login from 192.168.1.45"
-  echo "[!] HIGH: Port scan detected"
-elif [ "$choice" == "2" ]; then
-  echo "Scanning ports 22, 80, 443, 8080..."
-  echo "Port 8080 OPEN"
-elif [ "$choice" == "3" ]; then
-  cat report.csv
-else
-  echo "Exiting..."
+if [ $choice -eq 1 ]; then
+    echo "[+] Running Logwatcher..."
+    python3 logwatcher.py
+elif [ $choice -eq 2 ]; then
+    echo "[+] Running Portscanner..."
+    python3 portscanner.py
+elif [ $choice -eq 3 ]; then
+    cat report.csv
+elif [ $choice -eq 8 ]; then
+    echo "[+] Launching Web Dashboard on port 8080..."
+    echo "Open http://localhost:8080 in Chrome"
+    cd dashboard && python3 -m http.server 8080
+elif [ $choice -eq 4 ]; then
+    exit
 fi
