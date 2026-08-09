@@ -13,6 +13,12 @@ This toolkit proves you can do real SOC work from a phone.
 - **[4] Live Dashboard** - Real-time threat alerts at `http://localhost:8080`
   
   ![Dashboard Demo](Dashboard2.jpg.JPG)
+  ### 📱 Proof of Life
+Running live on Android with real threat alerts:
+
+![Dashboard Main](Dashboard0.jpg.JPG)
+![Install Steps](Install.jpg.JPG)
+![Dashboard Alt](Dashboard10.jpg.JPG)
   
 - **[0] Clean Exit**
 
