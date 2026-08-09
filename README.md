@@ -1,4 +1,4 @@
-# World’s First OFFLINE Pocket Mini SOC v1.5 🇬🇭
+# World’s First OFFLINE Pocket Mini SOC v1.6.5 🇬🇭
 **The first OFFLINE mobile SOC lab built on Android with Termux** 
 Built by King Vasco
 
@@ -12,11 +12,12 @@ This toolkit proves you can do real SOC work from a phone.
 - **[3] Reporting** - Generate full CSV security reports 
 - **[4] Live Dashboard** - Real-time threat alerts at `http://localhost:8080`
   
-  ![Dashboard Demo](Dashboard2.jpg.JPG)
+  ![Dashboard Demo](V8.jpg.JPG)
   ### 📱 Proof of Life
 Running live on Android with real threat alerts:
 
-![Dashboard Main](Dashboard0.jpg.JPG)
+![Dashboard Main](V6.jpg.JPG)
+Real ,Offline and Live
 ![Install Steps](Install.jpg.JPG)
 ![Dashboard Alt](Dashboard10.jpg.JPG)
   
