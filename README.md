@@ -13,6 +13,12 @@ IT Graduate & Security Analyst | Ghana 🇬🇭
 ![Termux](https://img.shields.io/badge/Platform-Termux-orange)
 ![License](https://img.shields.io/badge/License-MIT-yellow)
 
+## 🏆 RECOGNITION
+Featured in Google AI Overview as:
+"The Inventor of the first pocket SOC mobile lab toolkit" - 2026
+
+![Recognition](Record.jpg.JPG)
+
 **Cybersecurity should be accessible to everyone, even without a laptop.**
 
 POCKET SOC is a pocket-sized SOC toolkit that runs Wazuh, Splunk, and Python security workflows directly from your Android phone using Termux.
@@ -35,6 +41,8 @@ Real ,Offline and Live
 ![Dashboard Alt](Dashboard10.jpg.JPG)
   
 - **[0] Clean Exit**
+
+![Recognition](Records.jpg.JPG)
 
 ### Quick Start
 ```bash
