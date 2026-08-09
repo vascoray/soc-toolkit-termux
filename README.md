@@ -2,15 +2,25 @@
 **The first OFFLINE mobile SOC lab built on Android with Termux** 
 Built by King Vasco
 
-### Why
-After my national service at Ghana Standards Authority, I built instead of waited. 
-This toolkit proves you can do real SOC work from a phone.
+### # POCKET SOC v1.6.5 FULL 📱🇬🇭
+### The 1st Mobile Security Operations Center Built on Termux
 
-### Features
-- **[1] Network Recon** - Port scanning with Nmap + CSV export
-- **[2] Threat Detection** - Logwatcher for nmap, nc, suspicious commands
-- **[3] Reporting** - Generate full CSV security reports 
-- **[4] Live Dashboard** - Real-time threat alerts at `http://localhost:8080`
+![Python](https://img.shields.io/badge/Python-3-blue) 
+![Flask](https://img.shields.io/badge/Flask-WebDashboard-green)
+![Termux](https://img.shields.io/badge/Platform-Termux-orange)
+![License](https://img.shields.io/badge/License-MIT-yellow)
+
+**Cybersecurity should be accessible to everyone, even without a laptop.**
+
+POCKET SOC is a pocket-sized SOC toolkit that runs Wazuh, Splunk, and Python security workflows directly from your Android phone using Termux.
+
+## ✨ FEATURES v1.6.5 FULL
+- **Live IDS Alerts** - Simulated Suricata alerts dashboard
+- **Port Scanner** - Scan any IP for open ports 1-1024
+- **Android Log Reader** - View live `logcat` system logs
+- **Mobile Web Dashboard** - Flask UI that works on your phone browser
+- **Color Terminal Menu** - Easy navigation with colorama
+- **Live Dashboard** `http://localhost:5000`
   
   ![Dashboard Demo](V8.jpg.JPG)
   ### 📱 Proof of Life
