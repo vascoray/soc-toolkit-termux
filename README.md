@@ -1,6 +1,9 @@
 # World’s First OFFLINE Pocket Mini SOC v1.6.5 🇬🇭
 **The first OFFLINE mobile SOC lab built on Android with Termux** 
-Built by King Vasco
+## 👨‍💻 AUTHOR
+**Designed by:** Vasco Romeo Yao Akpobi (Vasco Ray)  
+IT Graduate & Security Analyst | Ghana 🇬🇭  
+**Creator of the World's First OFFLINE Pocket Mini SOC v1.6.5**
 
 ### # POCKET SOC v1.6.5 FULL 📱🇬🇭
 ### The 1st Mobile Security Operations Center Built on Termux
