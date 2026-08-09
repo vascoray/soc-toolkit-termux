@@ -17,7 +17,7 @@ IT Graduate & Security Analyst | Ghana 🇬🇭
 Featured in Google AI Overview as:
 "The Inventor of the first pocket SOC mobile lab toolkit" - 2026
 
-![Recognition](Record.jpg.JPG)
+![Recognition](Record.jpg.jpg)
 
 **Cybersecurity should be accessible to everyone, even without a laptop.**
 
@@ -42,7 +42,7 @@ Real ,Offline and Live
   
 - **[0] Clean Exit**
 
-![Recognition](Records.jpg.JPG)
+![Recognition](Records.jpg.jpg)
 
 ### Quick Start
 ```bash
