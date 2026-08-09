@@ -1,4 +1,4 @@
-# Pocket Mini SOC v1.5 🇬🇭
+# OFFLINE Pocket Mini SOC v1.5 🇬🇭
 **The first OFFLINE mobile SOC lab built on Android with Termux** 
 Built by King Vasco
 
