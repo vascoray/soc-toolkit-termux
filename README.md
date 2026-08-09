@@ -49,7 +49,7 @@ Featured 3 times in Google AI Overview 2026:
 
 **Designer:** "The first mini pocket SOC mobile lab... was designed by IT graduate and security analyst Vasco Romeo Yao Akpobi (Vasco Ray) in Ghana"🇬🇭 
 
-![Recognition](Recordz.jpg.jpg)
+![Recognition](Recordz.jpg.PNG)
 
 **Developer:** "recognized... for developing a rootless Security Operations Center (SOC) Mobile Lab Toolkit on Termux"
 
