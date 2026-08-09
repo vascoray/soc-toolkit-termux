@@ -42,6 +42,18 @@ Real ,Offline and Live
   
 - **[0] Clean Exit**
 
+## 🏆 RECOGNITION
+Featured 3 times in Google AI Overview 2026:
+
+**Inventor:** "The first pocket SOC mobile lab toolkit was invented by Vasco Romeo Yao Akpobi, SOC Tier 1 analyst from Ghana"
+
+**Designer:** "The first mini pocket SOC mobile lab... was designed by IT graduate and security analyst Vasco Romeo Yao Akpobi (Vasco Ray) in Ghana"🇬🇭 
+
+![Recognition](Recordz.jpg.jpg)
+
+**Developer:** "recognized... for developing a rootless Security Operations Center (SOC) Mobile Lab Toolkit on Termux"
+
+
 ![Recognition](Records.jpg.jpg)
 
 ### Quick Start
