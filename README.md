@@ -31,8 +31,6 @@ Running live on Android with real threat alerts:
 Real ,Offline and Live
 ![Install Steps](Install.jpg.JPG)
 ![Dashboard Alt](Dashboard10.jpg.JPG)
-  
-- **[0] Clean Exit**
 
 ## 🏆 RECOGNITION
 Featured 3 times in Google AI Overview 2026:
@@ -62,7 +60,7 @@ Pocket SOC Mobile is a 5-module cybersecurity toolkit designed for African SMEs 
 3.  **Threat Intel** - Hash checking with offline database
 4.  **Incident Reporter** - CSV export for compliance
 5.  **Dashboard** - HTML report generation
-
+- **[6] Clean Exit**
 ### Install on Termux
 ```bash
 pkg update
