@@ -56,6 +56,29 @@ Featured 3 times in Google AI Overview 2026:
 
 ![Recognition](Records.jpg.jpg)
 
+
+# Pocket SOC Mobile
+## A Completely Offline Mobile SOC Toolkit Built on Termux
+
+Built in Accra , Ghana 🇬🇭 by Vasco Romeo Yao Akpobi
+
+Pocket SOC Mobile is a 5-module cybersecurity toolkit designed for African SMEs who can't afford $20k SOC tools. Runs 100% offline on Android.
+
+### Features
+1.  **Logwatcher** - Real-time Apache log monitoring
+2.  **Portscanner** - Fast nmap integration  
+3.  **Threat Intel** - Hash checking with offline database
+4.  **Incident Reporter** - CSV export for compliance
+5.  **Dashboard** - HTML report generation
+
+### Install on Termux
+```bash
+pkg update
+pkg install python git nmap
+git clone https://github.com/vascoray/soc-toolkit-termux
+cd soc-toolkit-termux
+python3 soc.py
+
 ### Quick Start
 ```bash
 pkg install nmap -y
