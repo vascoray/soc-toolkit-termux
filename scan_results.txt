@@ -1,7 +1,1 @@
-Scan of 8.8.8.8 - 2026-08-08 23:01:20.442810
-
-Starting Nmap 7.99 ( https://nmap.org ) at 2026-08-08 23:01 +0000
-Nmap scan report for dns.google (8.8.8.8)
-Host is up (0.16s latency).
-Skipping host dns.google (8.8.8.8) due to host timeout
-Nmap done: 1 IP address (1 host up) scanned in 17.67 seconds
+# Nmap 7.99 scan initiated Thu Aug 13 20:18:48 2026 as: /data/data/com.termux/files/usr/bin/nmap -sC -sV -oN scan_results.txt 8.8.8.8

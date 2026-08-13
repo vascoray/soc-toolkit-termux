@@ -72,3 +72,6 @@
 [ALERT] Threat detected at Fri Aug  7 18:10:22 GMT 2026
 [ALERT] Threat detected at Fri Aug  7 18:10:27 GMT 2026
 Failed login detected from 192.168.1.100 at Fri Aug  7 18:10:30 GMT 2026
+2026-08-13 20:27:22 - INVESTIGATED 8.8.8.8 - United States
+2026-08-13 20:36:03 - INVESTIGATED 1.1.1.1 - Australia - Cloudflare, Inc
+2026-08-13 20:38:23 - INVESTIGATED 8.8.8.8 - United States - Google LLC
