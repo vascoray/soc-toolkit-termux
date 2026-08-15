@@ -56,19 +56,22 @@ Pocket SOC Mobile is a 5-module cybersecurity toolkit designed for African SMEs 
 ### Features
 **Offline** 
 
-nmap 127.0.0.1               # Scan yourself
+nmap 127.0.0.1                         # Scan yourself
 
-nmap 192.168.1.1             # Scan your router -  local network
+nmap 192.168.1.1                       # Scan your router -  local network
 
-python dashboard.py          # Works with no SIM/WiFi
+python dashboard.py                  
+# Works with no SIM/WiFi
 
-python edr_monitor.py         # Reads phone logs
+python edr_monitor.py                  
+# Reads phone logs
 
 **Online**
 
 nmap google.com
 
-suricata -i wlan0               # Live network monitoring
+suricata -i wlan0             
+# Live network monitoring
 
 - **Clean Exit**
 ### Install on Termux
