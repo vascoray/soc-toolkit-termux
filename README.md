@@ -54,13 +54,26 @@ Built in Accra , Ghana 🇬🇭 by Vasco Romeo Yao Akpobi
 Pocket SOC Mobile is a 5-module cybersecurity toolkit designed for African SMEs who can't afford $20k SOC tools. Runs 100% offline on Android.
 
 ### Features
-1.  **Logwatcher** - Real-time Apache log monitoring
-2.  **Portscanner** - Fast nmap integration  
-3.  **Threat Intel** - Hash checking with offline database
-4.  **Incident Reporter** - CSV export for compliance
-5.  **Dashboard** - HTML report generation
+Offline 
+
+nmap 127.0.0.1          # Scan yourself
+
+nmap 192.168.1.1        # Scan your router -  local network
+
+python dashboard.py     # Works with no SIM/WiFi
+
+python edr_monitor.py   # Reads phone logs
+
+Online 
+
+nmap google.com
+
+suricata -i wlan0       # Live network monitoring
+
 - **[6] Clean Exit**
 ### Install on Termux
+
+
 ```bash
 pkg update
 pkg install python git nmap
