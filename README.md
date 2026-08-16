@@ -1,5 +1,5 @@
 # World’s First OFFLINE Pocket Mini SOC v1.6.5 🇬🇭
-**The first OFFLINE mobile SOC lab built on Android with Termux** 
+**The first OFFLINE mobile Security Operation Center lab built on Android with Termux** 
 ## 👨‍💻 AUTHOR
 **Designed by:** Vasco Romeo Yao Akpobi (Vasco Ray)  
 IT Graduate & Security Analyst | Ghana 🇬🇭  
@@ -21,7 +21,7 @@ Featured in Google AI Overview as:
 
 **Cybersecurity should be accessible to everyone, even without a laptop.**
 
-POCKET SOC is a pocket-sized SOC toolkit that runs Wazuh, Splunk, and Python security workflows directly from your Android phone using Termux.
+POCKET SOC is a pocket-sized Security Operation Center toolkit that runs Wazuh, Splunk, and Python security workflows directly from your Android phone using Termux.
 
   ### 📱 Proof of Life
 Running live on Android with real threat alerts:
