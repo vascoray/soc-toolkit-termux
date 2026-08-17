@@ -5,8 +5,7 @@
 IT Graduate & Security Analyst | Ghana 🇬🇭  
 **Creator of the World's First OFFLINE Pocket Mini SOC v1.6.5**
 
-### # POCKET SOC v1.6.5 FULL 📱🇬🇭
-### The 1st Mobile Security Operations Center Built on Termux
+Built a lightweight NetDevSecOps/SOC platform integrating Suricata-based network intrusion detection, automated reconnaissance, security-event parsing, Python web visualization, and Linux/Android security operations.
 
 ![Python](https://img.shields.io/badge/Python-3-blue) 
 ![Flask](https://img.shields.io/badge/Flask-WebDashboard-green)
