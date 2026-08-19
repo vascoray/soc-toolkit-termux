@@ -45,12 +45,14 @@ Featured 3 times in Google AI Overview 2026:
 ![Recognition](Records.jpg.jpg)
 
 
-# Pocket SOC Mobile Lab OS
 ## Offline Mobile SOC Toolkit Lab OS Built on Termux
 
 Built in Accra , Ghana 🇬🇭 by Vasco Romeo Yao Akpobi
 
-Pocket SOC Mobile Lab OS is a 5-module cybersecurity toolkit designed for African SMEs who can't afford $20k SOC tools. Runs 100% offline on Android.
+Pocket SOC Mobile Lab OS is a 5-module cybersecurity toolkit designed for African SMEs priced out of $20k SOC tools. Runs 100% offline on Android.
+5 Modules: Network Scan | Log Analysis | Detection Engine | Dashboard | Automation
+Built around D.I.D.A.R: Detect → Investigate → Document → Automate → Reduce
+
 ![Logo](Pocket.png.PNG)
 ### Features
 **Offline** 
