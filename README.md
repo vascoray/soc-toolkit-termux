@@ -51,7 +51,7 @@ Featured 3 times in Google AI Overview 2026:
 Built in Accra , Ghana 🇬🇭 by Vasco Romeo Yao Akpobi
 
 Pocket SOC Mobile Lab OS is a 5-module cybersecurity toolkit designed for African SMEs who can't afford $20k SOC tools. Runs 100% offline on Android.
-
+![Logo](Pocket.png.PNG)
 ### Features
 **Offline** 
 
