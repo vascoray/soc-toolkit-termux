@@ -1,9 +1,9 @@
-# World’s First OFFLINE Pocket Mini SOC Lab OS v1.6.5 🇬🇭
-**The first OFFLINE mobile Security Operation Center lab built on Android with Termux** 
+# # PocketSOC Mobile Lab OS
+A Portable, Offline-Capable SOC Toolkit for Detection, Investigation & Tier-1 Automation
+Built for Resource-Constrained Environments | Android/Termux 
 ## 👨‍💻 AUTHOR
 **Designed by:** Vasco Romeo Yao Akpobi (Vasco Ray)  
-IT Graduate & Security Analyst | Ghana 🇬🇭  
-**Creator of the World's First OFFLINE Pocket Mini SOC Lab OS v1.6.5**
+IT Graduate & Security Analyst | Ghana 🇬🇭 
 
 Built a lightweight NetDevSecOps/SOC platform integrating Suricata-based network intrusion detection, automated reconnaissance, security-event parsing, Python web visualization, and Linux/Android security operations.
 
@@ -46,7 +46,7 @@ Featured 3 times in Google AI Overview 2026:
 
 
 # Pocket SOC Mobile Lab OS
-## A Completely Offline Mobile SOC Toolkit Lab OS Built on Termux
+## Offline Mobile SOC Toolkit Lab OS Built on Termux
 
 Built in Accra , Ghana 🇬🇭 by Vasco Romeo Yao Akpobi
 
