@@ -20,7 +20,7 @@ Featured in Google AI Overview as:
 
 **Cybersecurity should be accessible to everyone, even without a laptop.**
 
-POCKET SOC is a pocket-sized Security Operation Center toolkit that runs Wazuh, Splunk, and Python security workflows directly from your Android phone using Termux.
+POCKET SOC is a pocket-sized Security Operation Center toolkit that runs Wazuh-inspired FIM, Splunk-style log parsing, and Python security workflows directly from your Android phone using Termux.
 
   ### 📱 Proof of Life
 Running live on Android with real threat alerts:
